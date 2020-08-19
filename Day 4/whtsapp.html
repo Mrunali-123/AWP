@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="whtsapp.css"/>
+    <title>WhatsApp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cf6dec5b11.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="main-container">
+        <div class="chat-head">
+            <i class="fas fa-arrow-left"></i>
+            <h2>Mrunali Besarkar</h2>
+            <div class="nav-elements">
+                <i class="fas fa-phone-alt"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </div>
+        <div id="chat-box">
+        </div>
+        <div id="input-area">
+            <input id="user-input" type="text" placeholder="Type a message..." />
+            <button id="send-btn" onclick="displayMessage()"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </section>
+</body>
+<script src="whtsapp.js"></script>
+</html>

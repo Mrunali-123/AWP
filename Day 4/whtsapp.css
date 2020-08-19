@@ -1,0 +1,116 @@
+body{
+    display: grid;
+    font-family: 'Montserrat';
+}
+.main-container{
+    display: grid;
+    grid-column: 2;
+    background: url("./bkg.png");
+    border-radius: 8px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+@media screen and (max-width:840px){
+    body{
+        grid-template-columns: 0px 1fr 0px;
+    }
+    input[type="text"]{
+        width: 10em;
+    }
+}
+@media screen and (min-width:840px){
+    body{
+        grid-template-columns: 0.5fr 5fr 0.5fr;
+    }
+}
+.chat-head{
+    background-color: teal;
+    border-radius: 8px 8px 0 0 ;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+.chat-head > h2{
+    font-size: 18px;
+    padding: 6px 0;
+}
+.chat-head i{
+    font-size: 14px;
+    padding: 5px 5px;
+}
+.chat-head i:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.chat-head > i{
+    margin-right: 1rem;
+}
+.nav-elements{
+    margin-left: auto;
+}
+.nav-elements > i{
+    margin-left: 0.5rem;
+}
+#chat-box{
+    height: 500px;
+    padding: 5px 1rem;
+    overflow-y: scroll;
+}
+.text-element{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    word-wrap: break-all;
+    word-break: break-all;
+}
+.user-text{
+    background-color: rgb(120, 224, 143);
+    padding: 5px 12px;
+    border-radius: 5px 20px 20px 20px;
+    font-size: 14px;
+    font-family: 'Poppins';
+}
+.text-date{
+    font-size: 9px;
+    margin-left: 5px;
+    margin-top: -10px;
+    color: #7e7e7e;
+}
+input[type="text"]{
+    flex: 1;
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    caret-color: #6d6d6d;
+    font-family: 'Montserrat';
+}
+#send-btn{
+    padding: 9px 10px;
+    border-radius: 50%;
+    background-color: #008080;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+#send-btn:hover{
+    background-color: rgba(0, 128, 128, 0.8);
+}
+.fa-paper-plane{
+    color: #fff;
+    margin-right: 2px;
+    margin-top: 2px;
+}
+#input-area{
+    padding: 10px;
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1));
+    margin: 0;
+    display: flex;
+    border-radius: 0 0 8px 8px;
+    justify-content: space-evenly;
+}
+::-webkit-scrollbar{
+    scroll-behavior: auto;
+}
