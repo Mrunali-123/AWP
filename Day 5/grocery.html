@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <!-- Required meta tags -->
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+  crossorigin="anonymous">
+  <style>
+      .additems{
+    width: 90%;
+    border:none;
+    outline:none;
+    border-bottom: 1px solid black;
+    font-size: 12px;
+    background: transparent;
+    color:white
+     }
+ #btn{
+        width: 90%; 
+        height:25px;
+        font-size: 14px;
+        border: 1px solid white;
+        background: transparent;
+        outline: none;
+        border-radius: 5px;
+     }
+     .main{
+            height: 70px;
+            width: 400px;
+            overflow: auto;
+            
+        }
+        .sub{
+            height: 1000px;
+            background-color:white;
+            padding: 1rem;
+        }
+        .commentbox{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin-top: 2px;
+        }
+        .box{
+            height: 80px;
+            width: 92%;
+            overflow: auto;
+            margin-left: 20px;
+            border: 1px solid black;
+        }
+  </style>
+  <script src="grocery.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row bg-dark"  style="height: 3rem;">
+            <div></div>
+        </div>
+        <div class="row justify-content-center mt-3 ">
+            <div class="col-md-6 bg-danger rounded" style="height: 10rem;">
+                    <div class="row mt-3 justify-content-center" style="color: white;
+                    font-size: 22px;
+                    ">Add Grocery Items</div>
+                    <div class="row mt-4 justify-content-center">
+                    <input type="text" class="additems" placeholder="Add items here ..."></div>
+                    <div class="row mt-3 justify-content-center align-items-center">
+                        <input type="button" id="btn" value="Submit Here" onclick="add()">
+                        <!-- <button style="width: 90%; outline: none;">Submit Here</button> -->
+                    </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+                <div class="col-md-6 bg-secondary rounded" style="height: 12rem;
+                 color: cyan !important; ">
+                                 <div class="row mt-3 justify-content-center" style="color: white;
+                                 font-size: 22px;
+                                 ">Grocery Items</div>
+                                 <div class="row mt-2 ">
+                                     <div class="box">
+                                        <div class="commentbox" style="color:white"></div>     
+                                     </div>
+                                               
+                                </div>
+                                 <div class="row mt-3 justify-content-center align-items-center">
+                                     <input type="button" id="btn" value="Clear Items" onclick="document.querySelector('.commentbox').innerHTML=''">
+                                     <!-- <button style="width: 90%; outline: none;">Submit Here</button> -->
+                                 </div>
+                </div>
+    
+         </div>
+    </div>
+</body>
+</html>
